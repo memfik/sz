@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/icons/star.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <title>Лотерея АО «Сәтті Жұлдыз»</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav container">
+        <div class="nav-left">
+          <img src="img/icons/logo.png" alt="logo" />
+          <p class="hide">
+            Национальная <br />
+            лотерея
+          </p>
+        </div>
+        <div class="nav-right">
+          <div class="nav-right-tabs hide">
+            <a href="#app" class="header-link js-scroll"><p>Приложение</p></a>
+            <a href="#promotion" class="header-link js-scroll"><p>Акции</p></a>
+            <a href="#lotery" class="header-link js-scroll"><p>Лотереи</p></a>
+            <a href="#news" class="header-link js-scroll"><p>Новости</p></a>
+            <a href="#winners" class="header-link js-scroll"><p>Победители</p></a>
+            <a href="#about" class="header-link js-scroll"><p>О нас</p></a>
+            <a href="#info" class="header-link js-scroll"><p>Справочник</p></a>
+          </div>
+          <a href="https://sz.kz/login">
+            <button>Войти</button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="dark">
+      <div class="promotion container containerd center">
+        <div class="promo-section" id="app">
+          <div class="promo-section_image-block">
+            <img src="img/promo/app.png" alt="promo-image" class="promo-section_image" />
+          </div>
+          <div class="promo-section_text-block">
+            <p class="promo-section_title">Участвуй в лотереях «Satty Zhuldyz»</p>
+            <p class="promo-section_description">
+              Лотерея «Сәтті Жұлдыз» в приложении SZ.KZ! Покупай билеты и получай выигрыши прямо в
+              телефоне.
+            </p>
+            <div class="promo-section_footer">
+              <div class="promo-section_buttons-block">
+                <a href="https://sz.kz/application" target="_self"
+                  ><button class="promo-section_button-buy">Скачать приложение</button></a
+                >
+                <a href="https://sz.kz/" target="_self"
+                  ><button class="promo-section_button-more">Перейти на сайт</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="promotion_headline" id="promotion">Акции</h2>
+        <div class="promo-slider">
+          <div class="promo-slider_more">
+            <a href="https://sz.kz/akcii" target="_self">
+              <button class="promo-slider_button">
+                Все
+                <img src="img/icons/right.png" alt="arrow-right" />
+              </button>
+            </a>
+          </div>
+          <!-- test -->
+          <div class="promo hide">
+            <div class="wrapper">
+              <div class="promo-slider_card noslider">
+                <img src="img/promo/card-image-1.png" alt="promo-slider_card-image" />
+                <div class="promo-slider_card-wrapper">
+                  <p class="promo-slider_card-title">Участвуй в "LotoDrive"</p>
+                  <p class="promo-slider_card-description">
+                    «LotoDrive Classic» - это акция для всех любителей тиражных лотерей.
+                  </p>
+                  <a href="#">
+                    <button class="promo-slider_card-button">ПОДРОБНЕЕ</button>
+                  </a>
+                </div>
+              </div>
+              <div class="promo-slider_card noslider">
+                <img src="img/promo/card-image-2.png" alt="promo-slider_card-image" />
+                <div class="promo-slider_card-wrapper">
+                  <p class="promo-slider_card-title">Loto 6/49 дарит автомобиль</p>
+                  <p class="promo-slider_card-description">
+                    Каждый билет — это билет к встрече с вашим новым автомобилем!
+                  </p>
+                  <a href="#">
+                    <button class="promo-slider_card-button">ПОДРОБНЕЕ</button>
+                  </a>
+                </div>
+              </div>
+              <div class="promo-slider_card noslider">
+                <img src="img/promo/card-image-3.png" alt="promo-slider_card-image" />
+                <div class="promo-slider_card-wrapper">
+                  <p class="promo-slider_card-title">TELEBINGO дарит квартиру</p>
+                  <p class="promo-slider_card-description">
+                    Участвуй в розыгрыше и выиграй свою собственную квартиру!
+                  </p>
+                  <a href="#">
+                    <button class="promo-slider_card-button">ПОДРОБНЕЕ</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="promo-slider_block js-flickity hide-2"
+            data-flickity-options='{ "wrapAround": true,"prevNextButtons": false }'
+          >
+            <div class="promo-slider_card">
+              <img src="img/promo/card-image-1.png" alt="promo-slider_card-image" />
+              <div class="promo-slider_card-wrapper">
+                <p class="promo-slider_card-title">Участвуй в <br />"LotoDrive"</p>
+                <p class="promo-slider_card-description lotodrive">
+                  "LotoDrive classic" - это акция для всех любителей тиражных лотерей
+                </p>
+                <a href="#">
+                  <button class="promo-slider_card-button">ПОДРОБНЕЕ</button>
+                </a>
+              </div>
+            </div>
+            <div class="promo-slider_card">
+              <img src="img/promo/card-image-2.png" alt="promo-slider_card-image" />
+              <div class="promo-slider_card-wrapper">
+                <p class="promo-slider_card-title">Loto 6/49 дарит автомобиль</p>
+                <p class="promo-slider_card-description">
+                  Каждый билет — это билет к встрече с вашим новым автомобилем!
+                </p>
+                <a href="#">
+                  <button class="promo-slider_card-button">ПОДРОБНЕЕ</button>
+                </a>
+              </div>
+            </div>
+            <div class="promo-slider_card">
+              <img src="img/promo/card-image-3.png" alt="promo-slider_card-image" />
+              <div class="promo-slider_card-wrapper">
+                <p class="promo-slider_card-title">TELEBINGO дарит квартиру</p>
+                <p class="promo-slider_card-description tb">
+                  Участвуй в розыгрыше и выиграй свою собственную квартиру!
+                </p>
+                <a href="#">
+                  <button class="promo-slider_card-button">ПОДРОБНЕЕ</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lottery-catalog">
+        <h2 class="lottery-catalog_title" id="lotery">Каталог лотерей</h2>
+        <p class="lottery-catalog_description">Играйте и побеждайте!</p>
+        <div class="lottery-catalog_carousel">
+          <div class="lottery-catalog_carousel-first">
+            <img src="img/games/game-1.png" alt="game" />
+            <img src="img/games/game-2.png" alt="game" />
+            <img src="img/games/game-3.png" alt="game" />
+            <img src="img/games/game-4.png" alt="game" />
+            <img src="img/games/game-5.png" alt="game" />
+            <img src="img/games/game-6.png" alt="game" />
+            <img src="img/games/game-8.png" alt="game" />
+            <img src="img/games/game-9.png" alt="game" />
+            <img src="img/games/game-10.png" alt="game" />
+            <img src="img/games/game-11.png" alt="game" />
+            <img src="img/games/game-12.png" alt="game" />
+            <img src="img/games/game-13.png" alt="game" />
+            <img src="img/games/game-14.png" alt="game" />
+            <img src="img/games/game-15.png" alt="game" />
+            <img src="img/games/game-16.png" alt="game" />
+            <img src="img/games/game-17.png" alt="game" />
+            <img src="img/games/game-18.png" alt="game" />
+            <img src="img/games/game-19.png" alt="game" />
+            <img src="img/games/game-20.png" alt="game" />
+            <img src="img/games/game-21.png" alt="game" />
+            <img src="img/games/game-22.png" alt="game" />
+            <img src="img/games/game-23.png" alt="game" />
+            <img src="img/games/game-24.png" alt="game" />
+            <img src="img/games/game-25.png" alt="game" />
+            <img src="img/games/game-26.png" alt="game" />
+            <img src="img/games/game-27.png" alt="game" />
+            <img src="img/games/game-28.png" alt="game" />
+            <img src="img/games/game-1.png" alt="game" />
+            <img src="img/games/game-2.png" alt="game" />
+            <img src="img/games/game-3.png" alt="game" />
+            <img src="img/games/game-4.png" alt="game" />
+            <img src="img/games/game-5.png" alt="game" />
+            <img src="img/games/game-6.png" alt="game" />
+            <img src="img/games/game-8.png" alt="game" />
+            <img src="img/games/game-9.png" alt="game" />
+            <img src="img/games/game-10.png" alt="game" />
+            <img src="img/games/game-11.png" alt="game" />
+            <img src="img/games/game-12.png" alt="game" />
+            <img src="img/games/game-13.png" alt="game" />
+            <img src="img/games/game-14.png" alt="game" />
+            <img src="img/games/game-15.png" alt="game" />
+            <img src="img/games/game-16.png" alt="game" />
+            <img src="img/games/game-17.png" alt="game" />
+            <img src="img/games/game-18.png" alt="game" />
+            <img src="img/games/game-19.png" alt="game" />
+            <img src="img/games/game-20.png" alt="game" />
+            <img src="img/games/game-21.png" alt="game" />
+            <img src="img/games/game-22.png" alt="game" />
+            <img src="img/games/game-23.png" alt="game" />
+            <img src="img/games/game-24.png" alt="game" />
+            <img src="img/games/game-25.png" alt="game" />
+            <img src="img/games/game-26.png" alt="game" />
+            <img src="img/games/game-27.png" alt="game" />
+            <img src="img/games/game-28.png" alt="game" />
+          </div>
+          <div class="lottery-catalog_carousel-second">
+            <img src="img/games/game-29.png" alt="game" />
+            <img src="img/games/game-30.png" alt="game" />
+            <img src="img/games/game-31.png" alt="game" />
+            <img src="img/games/game-32.png" alt="game" />
+            <img src="img/games/game-33.png" alt="game" />
+            <img src="img/games/game-34.png" alt="game" />
+            <img src="img/games/game-35.png" alt="game" />
+            <img src="img/games/game-36.png" alt="game" />
+            <img src="img/games/game-37.png" alt="game" />
+            <img src="img/games/game-38.png" alt="game" />
+            <img src="img/games/game-39.png" alt="game" />
+            <img src="img/games/game-40.png" alt="game" />
+            <img src="img/games/game-41.png" alt="game" />
+            <img src="img/games/game-42.png" alt="game" />
+            <img src="img/games/game-43.png" alt="game" />
+            <img src="img/games/game-44.png" alt="game" />
+            <img src="img/games/game-45.png" alt="game" />
+            <img src="img/games/game-46.png" alt="game" />
+            <img src="img/games/game-47.png" alt="game" />
+            <img src="img/games/game-48.png" alt="game" />
+            <img src="img/games/game-49.png" alt="game" />
+            <img src="img/games/game-50.png" alt="game" />
+            <img src="img/games/game-51.png" alt="game" />
+            <img src="img/games/game-52.png" alt="game" />
+            <img src="img/games/game-53.png" alt="game" />
+            <img src="img/games/game-54.png" alt="game" />
+            <img src="img/games/game-55.png" alt="game" />
+            <img src="img/games/game-29.png" alt="game" />
+            <img src="img/games/game-30.png" alt="game" />
+            <img src="img/games/game-31.png" alt="game" />
+            <img src="img/games/game-32.png" alt="game" />
+            <img src="img/games/game-33.png" alt="game" />
+            <img src="img/games/game-34.png" alt="game" />
+            <img src="img/games/game-35.png" alt="game" />
+            <img src="img/games/game-36.png" alt="game" />
+            <img src="img/games/game-37.png" alt="game" />
+            <img src="img/games/game-38.png" alt="game" />
+            <img src="img/games/game-39.png" alt="game" />
+            <img src="img/games/game-40.png" alt="game" />
+            <img src="img/games/game-41.png" alt="game" />
+            <img src="img/games/game-42.png" alt="game" />
+            <img src="img/games/game-43.png" alt="game" />
+            <img src="img/games/game-44.png" alt="game" />
+            <img src="img/games/game-45.png" alt="game" />
+            <img src="img/games/game-46.png" alt="game" />
+            <img src="img/games/game-47.png" alt="game" />
+            <img src="img/games/game-48.png" alt="game" />
+            <img src="img/games/game-49.png" alt="game" />
+            <img src="img/games/game-50.png" alt="game" />
+            <img src="img/games/game-51.png" alt="game" />
+            <img src="img/games/game-52.png" alt="game" />
+            <img src="img/games/game-53.png" alt="game" />
+            <img src="img/games/game-54.png" alt="game" />
+            <img src="img/games/game-55.png" alt="game" />
+          </div>
+        </div>
+        <a href="https://sz.kz/momentalnyie-loterei" class="center"
+          ><button class="lottery-catalog_button">Посмотреть</button></a
+        >
+      </div>
+    </div>
+    <div class="gradient">
+      <div class="record container containerd center">
+        <div class="record_block">
+          <h2 id="record">Рекордный джекпот</h2>
+          <p>
+            156 млн тенге выиграла казахстанка в январе 2024 года. Присоединяйтесь к нашей
+            захватывающей лотерее и откройте двери к бесконечным возможностям!
+          </p>
+          <a href="https://sz.kz" target="_self">
+            <button class="record_button-buy">купить билет</button>
+          </a>
+        </div>
+        <img src="img/winners/record.png" alt="record" />
+      </div>
+    </div>
+    <div class="light">
+      <div class="winners container containerd center">
+        <h2 id="winners">Победители</h2>
+        <div class="winners_card-wrapper">
+          <a href="https://sz.kz/winners">
+            <div class="winners_card">
+              <img src="img/winners/winner.png" alt="winner" />
+              <div class="winners_card-info">
+                <div>
+                  <p class="winners_card_name">Серик С</p>
+                  <p class="winners_card_prize">Автомобиль</p>
+                  <img src="img/icons/game.png" alt="game" class="winners_card-game" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://sz.kz/winners">
+            <div class="winners_card">
+              <img src="img/winners/winner.png" alt="winner" />
+              <div class="winners_card-info">
+                <div>
+                  <p class="winners_card_name">Серик С</p>
+                  <p class="winners_card_prize">Автомобиль</p>
+                  <img src="img/icons/game-2.png" alt="game" class="winners_card-game" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://sz.kz/winners" class="hide">
+            <div class="winners_card">
+              <img src="img/winners/winner.png" alt="winner" />
+              <div class="winners_card-info">
+                <div>
+                  <p class="winners_card_name">Серик С</p>
+                  <p class="winners_card_prize">Автомобиль</p>
+                  <img src="img/icons/game-2.png" alt="game" class="winners_card-game" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://sz.kz/winners" class="hide">
+            <div class="winners_card">
+              <img src="img/winners/winner.png" alt="winner" />
+              <div class="winners_card-info">
+                <div>
+                  <p class="winners_card_name">Серик С</p>
+                  <p class="winners_card_prize">Автомобиль</p>
+                  <img src="img/icons/game-3.png" alt="game" class="winners_card-game" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://sz.kz/winners">
+            <div class="winners_card">
+              <img src="img/winners/winner.png" alt="winner" />
+              <div class="winners_card-info">
+                <div>
+                  <p class="winners_card_name">Серик С</p>
+                  <p class="winners_card_prize">Автомобиль</p>
+                  <img src="img/icons/game-3.png" alt="game" class="winners_card-game" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://sz.kz/winners" target="_self" class="winners_card-all-link">
+            <div class="winners_card-all">
+              <p class="winners_card-all-title">Все победители</p>
+              <img src="img/icons/right.png" alt="right" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="news container containerd center">
+        <h2 id="news">Новости</h2>
+        <div
+          class="news_card-block js-flickity hide-2"
+          data-flickity-options='{ "freeScroll": true,
+            "contain": false,
+            "prevNextButtons": false,
+            "pageDots": false }'
+        >
+          <div class="news_card">
+            <a href="https://sz.kz/news" target="_self">
+              <img src="img/news/news-1.png" alt="news" />
+              <div class="news_card-info">
+                <p class="news_card-info-text">Внимание! Будьте бдительны! Незаконное КАЗИНО!</p>
+                <p class="news_card-info-date">10.02.2023</p>
+              </div>
+            </a>
+          </div>
+          <div class="news_card">
+            <a href="https://sz.kz/news" target="_self">
+              <img src="img/news/news-2.png" alt="news" />
+              <div class="news_card-info">
+                <p class="news_card-info-text">Внимание! Будьте бдительны! Незаконное КАЗИНО!</p>
+                <p class="news_card-info-date">10.02.2023</p>
+              </div>
+            </a>
+          </div>
+          <div class="news_card-more">
+            <a href="https://sz.kz/news" target="_self">
+              <img src="img/icons/news.svg" alt="news" class="news_card-more-image" />
+              <button class="news_card-more-button">
+                Читать&nbsp;больше <img src="img/icons/arrow-right.svg" alt="arrow-right" />
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="wrapper hide">
+          <div class="news_card">
+            <img src="img/news/news-1.png" alt="news" />
+            <div class="news_card-info">
+              <p class="news_card-info-text">Внимание! Будьте бдительны! Незаконное КАЗИНО!</p>
+              <p class="news_card-info-date">10.02.2023</p>
+            </div>
+          </div>
+          <div class="news_card">
+            <img src="img/news/news-2.png" alt="news" />
+            <div class="news_card-info">
+              <p class="news_card-info-text">Внимание! Будьте бдительны! Незаконное КАЗИНО!</p>
+              <p class="news_card-info-date">10.02.2023</p>
+            </div>
+          </div>
+          <div class="news_card-more">
+            <img src="img/icons/news.svg" alt="news" class="news_card-more-image" />
+            <a href="https://sz.kz/news" target="_self">
+              <button class="news_card-more-button">
+                <span>Читать&nbsp;больше</span>
+                <img src="img/icons/arrow-right.svg" alt="arrow-right" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="info container containerd center">
+        <div class="info-block">
+          <img src="img/info/location.png" alt="info_image" class="info-block_image hide-2" />
+          <img src="img/info/locationd.png" alt="info_image" class="info-block_image hide" />
+          <div class="info-block-text">
+            <h2 id="info">Карта точек продаж</h2>
+            <p>
+              Лотерейные билеты «Сәтті Жұлдыз» можно приобрести в торговых точках, указанных на
+              нашей карте.
+            </p>
+            <div class="info-block_button-wrapper">
+              <a href="">
+                <button class="info-block_button">посмотреть</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="info-block hide-2">
+          <img src="img/info/directory.png" alt="info_image" class="info-block_image" />
+          <div class="info-block-text">
+            <h2>Справочник участников</h2>
+            <p>Справочник участников: ваш путеводитель к удаче и выигрышу!</p>
+            <div class="info-block_button-wrapper">
+              <a href="">
+                <button class="info-block_button">посмотреть</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="info-block hide">
+          <div class="info-block-text">
+            <h2>Справочник участников</h2>
+            <p>Справочник участников: ваш путеводитель к удаче и выигрышу!</p>
+            <div class="info-block_button-wrapper">
+              <a href="">
+                <button class="info-block_button">посмотреть</button>
+              </a>
+            </div>
+          </div>
+          <img src="img/info/directoryd.png" alt="info_image" class="info-block_image" />
+        </div>
+        <div class="info-block">
+          <img src="img/info/aboutus.png" alt="info_image" class="info-block_image hide-2" />
+          <img src="img/info/locationd.png" alt="info_image" class="info-block_image hide" />
+          <div class="info-block-text">
+            <h2 id="about">Подробнее о нас</h2>
+            <p>Узнайте больше о компании и присоединяйтесь к нам сегодня.</p>
+            <div class="info-block_button-wrapper">
+              <a href="">
+                <button class="info-block_button">посмотреть</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social_responsibility container containerd center">
+        <h2>Социальная ответственность:</h2>
+        <p>
+          10% от операционного игрового дохода перечисляется на развитие отечественного спорта.10%
+          от операционного игрового дохода перечисляется в Общественный Фонд «Қазақстан Халқына»
+        </p>
+        <div class="social_responsibility-images">
+          <img src="img/funds/fund-1.png" alt="fund" class="center" />
+          <img src="img/funds/fund-2.png" alt="fund" class="center" />
+          <img src="img/funds/fund-3.png" alt="fund" class="center" />
+          <img src="img/funds/fund-4.png" alt="fund" class="center" />
+          <img src="img/funds/fund-5.png" alt="fund" class="center" />
+          <img src="img/funds/fund-6.png" alt="fund" class="center" />
+        </div>
+      </div>
+      <div class="partners container containerd center">
+        <h2>Партнеры</h2>
+        <div class="partners-images">
+          <img src="img/partners/partner-1.png" alt="partner" class="center" />
+          <img src="img/partners/partner-2.png" alt="partner" class="center" />
+          <img src="img/partners/partner-3.png" alt="partner" class="center" />
+          <img src="img/partners/partner-4.png" alt="partner" class="center" />
+          <img src="img/partners/partner-5.png" alt="partner" class="center" />
+          <img src="img/partners/partner-6.png" alt="partner" class="center" />
+          <img src="img/partners/partner-7.png" alt="partner" class="center" />
+          <img src="img/partners/partner-8.png" alt="partner" class="center" />
+          <img src="img/partners/partner-9.png" alt="partner" class="center hide-2" />
+        </div>
+        <div class="partners-images-2">
+          <img src="img/partners/partner-9.png" alt="partner" class="center hide" />
+          <img src="img/partners/partner-10.png" alt="partner" class="center" />
+          <img src="img/partners/partner-11.png" alt="partner" class="center" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-d containerd center hide">
+        <div class="footer-d-info">
+          <div class="footer-d-sections">
+            <div>
+              <h3>АО «Сәтті Жұлдыз»</h3>
+              <a href="https://sz.kz/about">
+                <p>О компании</p>
+              </a>
+              <a href="https://sz.kz/kontakty">
+                <p>Контакты</p>
+              </a>
+              <a href="https://sz.kz/news?category=1005">
+                <p>Социальные проекты</p>
+              </a>
+              <a href="https://sz.kz/news">
+                <p>Новости</p>
+              </a>
+              <a href="https://static.sz.kz/docs/oferta_rus.pdf">
+                <p>Публичный договор</p>
+              </a>
+              <a href="https://static.sz.kz/docs/prikaz-45.pdf">
+                <p>Правила поведения лотерей</p>
+              </a>
+              <a href="https://sz.kz/pravovaya-informatsiya">
+                <p>Правовая информация</p>
+              </a>
+              <a href="https://sz.kz/news?category=1009">
+                <p>Отчеты</p>
+              </a>
+            </div>
+            <div>
+              <h3>Участникам</h3>
+              <a href="https://sz.kz/vipclub">
+                <p>VIP клуб</p>
+              </a>
+              <a href="https://sz.kz/checkticket">
+                <p>Проверка билета</p>
+              </a>
+              <a href="https://sz.kz/generator">
+                <p>Генератор счасливых чисел</p>
+              </a>
+              <a href="https://sz.kz/results">
+                <p>Результаты тиражей</p>
+              </a>
+              <a href="https://sz.kz/gde-kupit-lotereyu">
+                <p>Карта точек продаж</p>
+              </a>
+              <a href="https://sz.kz/help">
+                <p>Справочник участника</p>
+              </a>
+              <a href="https://sz.kz/oi">
+                <p>Ответственная игра</p>
+              </a>
+              <a href="https://sz.kz/ostorozhno">
+                <p>Осторожно, мошенники</p>
+              </a>
+            </div>
+            <div>
+              <h3>Акции</h3>
+              <a href="https://sz.kz/a">
+                <p>7s Avto LOTO</p>
+              </a>
+              <a href="https://sz.kz/s">
+                <p>Мега Миллионер</p>
+              </a>
+              <a href="https://sz.kz/taga-million">
+                <p>Обуздай миллион</p>
+              </a>
+              <a href="https://sz.kz/kvartira-v-telebingo">
+                <p>Розыгрыш квартиры</p>
+              </a>
+              <a href="https://sz.kz/mashina-v-loto-6-49">
+                <p>Розыгрыш кроссовера</p>
+              </a>
+            </div>
+            <div>
+              <h3>Поддержка</h3>
+              <a href="tel:+78000805200">
+                <p>+7 (800) 080-52-00</p>
+              </a>
+              <a href="tel:+77059262626">
+                <p>+7 (705) 926-26-26</p>
+              </a>
+              <a href="tel:+77273392626">
+                <p>+7 (727) 339-26-26</p>
+              </a>
+              <div class="footer-d-links">
+                <a href="https://t.me/sattyzhuldyz_official"
+                  ><img src="img/links/tg.png" alt="link"
+                /></a>
+                <a href=""><img src="img/links/wp.png" alt="link" /></a>
+                <a href="https://www.instagram.com/sattyzhuldyz/"
+                  ><img src="img/links/ig.png" alt="link"
+                /></a>
+                <a href="https://www.facebook.com/sattyzhuldyz"
+                  ><img src="img/links/fb.png" alt="link"
+                /></a>
+                <a href=""><img src="img/links/ds.png" alt="link" /></a>
+                <a href="https://www.youtube.com/c/sattyzhuldyz"
+                  ><img src="img/links/yb.png" alt="link"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <img src="img/links/qr.png" alt="qr" />
+        </div>
+        <p>
+          АО «Сәтті Жұлдыз» - оператор лотереи Республики Казахстан, представляет вашему вниманию
+          лотерейные продукты мирового уровня. Моментальные и тиражные игры от АО «Сәтті Жұлдыз» -
+          это соответствие всем требованиям закона РК и высоким международным стандартам.
+        </p>
+      </div>
+      <div class="footer-m hide-2">
+        <div class="footer-m-app">
+          <h3>Скачайте наше приложение:</h3>
+          <div class="footer-m-app-links">
+            <a href=""><img src="img/links/pm.png" alt="link" /></a>
+            <a href=""><img src="img/links/as.png" alt="link" /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-m-links">
+          <h3>Ищите нас в социальных сетях:</h3>
+          <div class="footer-m-links-block">
+            <a href="https://t.me/sattyzhuldyz_official"
+              ><img src="img/links/tg.png" alt="link"
+            /></a>
+            <a href=""><img src="img/links/wp.png" alt="link" /></a>
+            <a href=""><img src="img/links/ds.png" alt="link" /></a>
+            <a href=""><img src="img/links/mail.png" alt="link" /></a>
+            <a href="https://www.youtube.com/c/sattyzhuldyz"
+              ><img src="img/links/yb.png" alt="link"
+            /></a>
+            <a href=""><img src="img/links/tt.png" alt="link" /></a>
+            <a href="https://www.instagram.com/sattyzhuldyz/"
+              ><img src="img/links/ig.png" alt="link"
+            /></a>
+            <a href="https://www.facebook.com/sattyzhuldyz"
+              ><img src="img/links/fb.png" alt="link"
+            /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-m-info">
+          <h3>© 2017-2020 АО «Сәтті Жұлдыз» Все права защищены.</h3>
+          <img src="img/icons/18.png" alt="18+" />
+        </div>
+        <hr />
+        <div class="footer-m-response">
+          <h3>CОЦИАЛЬНАЯ ОТВЕТСТВЕННОСТЬ:</h3>
+          <ul>
+            <li>
+              10% от операционного игрового дохода перечисляется на развитие отечественного спорта.
+            </li>
+            <li>
+              10% от операционного игрового дохода перечисляется в Общественный Фонд «Қазақстан
+              Халқына»
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
